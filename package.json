@@ -2,7 +2,7 @@
   "name": "skull-css",
   "version": "1.0.0",
   "description": "basic scss library with susy grid for a random project",
-  "main": "index.js",
+  "main": "scss/skull-css.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
