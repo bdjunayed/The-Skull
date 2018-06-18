@@ -1,9 +1,16 @@
-# susy-skull
+# skull-css
 
 > basic scss library with susy grid for a random project
 
 ## Usage
-> reade the classes
+### SCSS
+Paste the SCSS folder into your project
+Add this line in your app.scss file
+```scss
+@import "skull-css";
+```
+## Development and Contributing
+You are welcome to contribute.
 
 ## License
-Apache
+Apache 2.0
