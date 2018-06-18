@@ -1,0 +1,24 @@
+/*
+@include susy-at($md) {
+  .navbar {
+    .logo {
+      width: span(4);
+    }
+    // menu / burger toggle
+    .burger {
+        display: none;
+    }
+
+    .menu{
+        width: span(4);
+        display: inline-block;
+        .start{}
+        .end{
+          float: right;
+          .item{
+            .link {}
+          }
+        }
+    }
+  }
+}*/
