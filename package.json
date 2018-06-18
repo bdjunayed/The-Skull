@@ -13,12 +13,10 @@
   "keywords": [
     "css",
     "framework",
-    "css",
-    "framework",
-    "css",
-    "grid"
+    "scss",
+    "sass"
   ],
-  "author": "Junayed M Chowdhury",
+  "author": "Junayed M Chowdhury <junayed@microtechna.com> (http://microtechna.com)",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/bdjunayed/skull-css/issues"
