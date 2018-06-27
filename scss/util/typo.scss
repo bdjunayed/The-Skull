@@ -163,3 +163,21 @@ table {
         line-height: 1.22222222em;
     }
 }
+
+//
+// Text
+//
+
+.text-monospace { font-family: $font-family-monospace; }
+
+// Alignment
+
+.text-justify  { text-align: justify !important; }
+.text-nowrap   { white-space: nowrap !important; }
+.text-truncate { @include text-truncate; }
+
+// Transformation
+
+.text-lowercase  { text-transform: lowercase !important; }
+.text-uppercase  { text-transform: uppercase !important; }
+.text-capitalize { text-transform: capitalize !important; }

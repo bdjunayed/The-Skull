@@ -24,38 +24,46 @@
     color: $gray !important;
     background-color: $accent-color;
     cursor: pointer;
-    &,
-    &:active,
-    &.active {
-        &:focus,
-        &.focus {
-            outline: 5px auto -webkit-focus-ring-color;
-            outline-offset: -2px;
-        }
-    }
 
-    &:hover,
-    &:focus,
-    &.focus {
-        color: $secondary-text;
-        text-decoration: none;
-    }
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .65;
+    box-shadow: none;
+  }
 
-    &:active,
-    &.active {
-        outline: 0;
-        background-image: none;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, .125);
-    }
+  // Opinionated: add "hand" cursor to non-disabled .btn elements
+  &:not(:disabled):not(.disabled) {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+    cursor: pointer;
+    background-image: none;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .125);
+  }
 
-    &.disabled,
-    &[disabled],
-    fieldset[disabled] & {
-        cursor: not-allowed;
-        opacity: .65;
-        box-shadow: none;
+  &:hover,
+  &:focus,
+  &.focus {
+      color: $secondary-text;
+      text-decoration: none;
+      outline: 0;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    background-image: none;
+
+    &:focus {
     }
+  }
 }
+// Future-proof disabling of clicks on `<a>` elements
+a.btn.disabled,
+fieldset:disabled a.btn {
+  pointer-events: none;
+}
+
 
 .btn-submit {
     padding: .5rem .6rem;
@@ -90,9 +98,6 @@
 // Alternate buttons
 // --------------------------------------------------
 .btn-default {}
-
-.btn-primary {}
-
 // Success appears as green
 .btn-success {}
 
@@ -118,3 +123,24 @@
 */
 
 
+//
+// Block button
+//
+
+.btn-block {
+  display: block;
+  width: 100%;
+
+  // Vertically space out multiple block buttons
+  + .btn-block {
+  }
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
