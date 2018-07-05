@@ -33,11 +33,16 @@
   }
   .header {
     .title{}
+    .subtitle {
+      margin-bottom: 0;
+    }
     .icon{}
   }
-  .image{}
+  .image{width: 100%;}
   .content{}
   .footer{
     .item{}
   }
+}
+.card-link {
 }

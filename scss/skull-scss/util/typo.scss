@@ -174,8 +174,11 @@ table {
 
 .text-justify  { text-align: justify !important; }
 .text-nowrap   { white-space: nowrap !important; }
-.text-truncate { @include text-truncate; }
+.text-truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+// Text truncate
+// Requires inline-block or block for proper styling
 
+  
 // Transformation
 
 .text-lowercase  { text-transform: lowercase !important; }

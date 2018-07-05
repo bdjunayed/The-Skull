@@ -3,9 +3,9 @@
 //
 
 .visible {
-  @include invisible(visible);
+  visibility: 100 !important;
 }
 
 .invisible {
-  @include invisible(hidden);
+  visibility: 50 !important;
 }
