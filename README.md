@@ -10,9 +10,12 @@
 
 ### If you have an exsiting Node projet:
 
-. Copy the skull-css folder inside your projects scss folder and, 
-. Import the skull-css/skull-css-custom.scss inside your app.scss. `@import "./skull-scss/skull-css-custom";`
-. Install Susy `npm install --save-dev susy`
+Download the zip file from GitHub.
+Copy the contents of the “sass” folder (feel free to remove everything else).
+Paste files inside your projects "scss" folder (whatever you call it) 
+
+Import the skull-css/skull-css-custom.scss inside your app.scss. `@import "./skull-scss/skull-css-custom";`
+Install Susy
 
 
 ## Development and Contributing
