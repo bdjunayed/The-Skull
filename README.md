@@ -1,11 +1,14 @@
 # skull-css
-
-> basic scss library with Susy grid for a random project.
+> Susy enabled basic css class library.
+> You just need to decorate the structured classes.
+.
 
 ## Instruction / cautions!
-> All files with Underscore need to be minimal. I added the bootstrup structure not for using the code here. We are deleting the codes. If you are interested about bootstrap you may follow their repo.
+> N.B: All files with Underscore need to be minimal. I added the bootstrup structure not for using the code here. We are deleting the codes. If you are interested about bootstrap you may follow their repo.
 
-* Let you have a Node projet:
+### Clone and run 'npm install'
+
+### If you have an exsiting Node projet:
 
 . Copy the skull-css folder inside your projects scss folder and, 
 . Import the skull-css/skull-css-custom.scss inside your app.scss. `@import "./skull-scss/skull-css-custom";`
@@ -19,4 +22,4 @@ You are welcome to contribute.
 Apache 2.0
 
 ## Contact:
-[Junayed Chowdhury](@bdjunayed)
+[@bdjunayed](https://twitter.com/bdjunayed)
