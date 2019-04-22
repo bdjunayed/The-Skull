@@ -1,33 +1,39 @@
 /* ==========================================================================
     Typography
-    by: microTechna.com
+    by: Matesglobal
    ========================================================================== */
 
-/* Typography Basic codes in SCSS
-Instruction: Paste the code in you typo.scss file, and ready to work
-Additional code from the web:
+/* 
 http://topfunky.com/baseline-rhythm-calculator/
 http://pxtoem.com/
 
 /******************************************************/
-
 /*         Typo code starts from here                 */
-
 /*                                                    */
-
 /*  web:   https://codepen.io/bdjunayed/pen/veZLEy    */
-
 /*                                                    */
-
 /*  Generate for diffrents font-size with line-height */
-
 /*  http://topfunky.com/baseline-rhythm-calculator/   */
-
 /*  css to scss: http://css2sass.herokuapp.com/       */
-
 /******************************************************/
+
 /****   Initialize the HTML                        ****/
 //Hypen https://css-tricks.com/almanac/properties/h/hyphenate/
+
+/*  ------------------------------------------
+    Font stacks
+    ------------------------------------------  */
+//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+//@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+//@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+$roboto-helveticNue: "Roboto", Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+$font-family-monospace: Georgia, serif;
+
 .hy {
     -ms-hyphens: auto;
     -moz-hyphens: auto;
@@ -44,11 +50,6 @@ html {
     font-size: calc(14px + 0.5vw); //font-size: 100%;
     -webkit-font-smoothing: antialiased;
 
-}
-
-p {
-    font-size: 1em;
-    line-height: 1.4em;
 }
 
 ul,
@@ -70,6 +71,11 @@ ol ol {
     font-size: 1em;
     line-height: 1.5em;
     margin-bottom: 1.5em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4em;
 }
 
 h1 {
@@ -99,6 +105,8 @@ h5 {
 h6 {
     font-size: 0.3535rem;
 }
+
+
 
 /* Tables */
 table {
