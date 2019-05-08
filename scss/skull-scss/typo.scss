@@ -23,16 +23,20 @@ http://pxtoem.com/
 /*  ------------------------------------------
     Font stacks
     ------------------------------------------  */
-//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-//@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 //@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('http://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('http://fonts.googleapis.com/css?family=Pinyon+Script');
+@import url('http://fonts.googleapis.com/css?family=Petit+Formal+Script');
+
 
 $helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$garamond: 'EB Garamond', serif;
 $georgia: Georgia, serif;
 $roboto-helveticNue: "Roboto", Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
 $font-family-monospace: Georgia, serif;
+$roboto-arial: 'Roboto', Arial, Verdana;
+
 
 .hy {
     -ms-hyphens: auto;
@@ -45,11 +49,10 @@ $font-family-monospace: Georgia, serif;
 
 html {
     /* Change default typefaces here */
-    font-family: $roboto-helveticNue;
+    font-family: $roboto-arial;
     line-height: 1.4;
     font-size: calc(14px + 0.5vw); //font-size: 100%;
     -webkit-font-smoothing: antialiased;
-
 }
 
 ul,
@@ -74,7 +77,7 @@ ol ol {
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.4em;
 }
 
@@ -106,8 +109,6 @@ h6 {
     font-size: 0.3535rem;
 }
 
-
-
 /* Tables */
 table {
     margin-top: 1.5rem;
@@ -121,11 +122,9 @@ table {
     }
 }
 
-/****font-size:16, line-height: 1.4rem ****************/
-
 @media screen and (min-width: $md) {
     p {
-        font-size: 15px;
+        font-size: 1.1em;
         line-height: 1.4em;
     }
     h1 {
@@ -150,10 +149,10 @@ table {
 
 @media screen and (min-width: $lg) {
     p {
-        font-size: 16px;
+        font-size: 1.2em;
     }
     h1 {
-        font-size: 3em;
+        font-size: 1em;
         line-height: 1.05em;
     }
 
@@ -179,16 +178,18 @@ table {
 .text-monospace { font-family: $font-family-monospace; }
 
 // Alignment
-
 .text-justify  { text-align: justify !important; }
 .text-nowrap   { white-space: nowrap !important; }
 .text-truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-// Text truncate
-// Requires inline-block or block for proper styling
 
-  
 // Transformation
-
 .text-lowercase  { text-transform: lowercase !important; }
 .text-uppercase  { text-transform: uppercase !important; }
 .text-capitalize { text-transform: capitalize !important; }
+
+// Text selection
+::selection {
+    background-color: rgba(255, 133, 52, 0.5);
+    color: $accent-color;
+    text-shadow: none;
+  }

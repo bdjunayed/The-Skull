@@ -1,30 +1,22 @@
 /* ==========================================================================
     Variables
-    by: microTechna.com
+    by: @bdjunayed
    ========================================================================== */
 
 /*
 sm 0 - 540
 md 541 - 768
 lg 769 - 992
-
-For mobile first design,
-minwidth(541) for the table,
-minwidth (769) for  the desktop.
 */
 
-/**
-Mobile first design:
-default grid column 4, then 8 and 12
 
-Implementation: plz see the class navbar.burger & menu
- */
 /*  ------------------------------------------
     Breakpoints
     ------------------------------------------  */
-//$sm: 0px;
-$md: 541px;
-$lg: 769px;
+$xs: 320px;
+$sm: 540px;
+$md: 768px;
+$lg: 1024px;
 
 //$md: (
 //        'min-width': 541px,

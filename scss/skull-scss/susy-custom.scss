@@ -1,6 +1,6 @@
 /* ==========================================================================
     Susy settings
-    by: microTechna.com
+    by: @bdjunayed
    ========================================================================== */
 
 /*
@@ -21,8 +21,8 @@ scss default values
 $susy: (
     'columns': susy-repeat(12),
     'gutters': 0.25,
-    'spread': 'narrow', //default value
-    'container-spread': 'narrow', //default
+    'spread': 'narrow', // default
+    'container-spread': 'narrow', // default
 );
 
 // box-sizing required by susy
