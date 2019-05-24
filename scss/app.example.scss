@@ -1,0 +1,50 @@
+@import './skull-scss/skull-scss';
+@import 'p_contact';
+@import 'p_services';
+@import 'p_products';
+@import '~owl.carousel/src/scss/owl.carousel';
+@import '~owl.carousel/src/scss/owl.theme.default';
+//-----------------Styles-----------------------------
+//.container {  background: susy-svg-grid() no-repeat scroll;}
+.cfx    { @include    clearfix;  }
+.debug  { outline:    1px solid #ff0000; }
+.clear  { clear:      both;  }
+.right  { float:      right; }
+.left   { float:      left;  }
+.center { text-align: center; }
+
+body {
+  font-family: $open-sans;
+  font-size: 12px;
+  line-height: 21px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  @include container($width: 100%, $debug: false);
+  @media only screen and (min-width: $lg) {
+    @include container($width: 70%, $debug: false);
+  }
+}
+
+// TWO COLOUMN
+.top-header {
+  padding: 0 20px;
+  height: 72px;
+}
+.top-header-logo {
+  @include span(6);
+  line-height: 72px;
+}
+.top-header-menu {
+  @include span(6 last);
+  text-align: right;
+  line-height: 72px;
+  i {
+    font-size: 22px;
+  }
+}
