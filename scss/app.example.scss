@@ -31,6 +31,18 @@ ul {
   }
 }
 
+.container {
+  @include container($width: 1920px, $debug: false);
+}
+.container-tw {
+  @include container($width: 1200px, $debug: false);
+}
+.container-padding {
+  @media only screen and (min-width: $md){
+  padding: 0 40px;
+  }
+}
+
 // TWO COLOUMN
 .top-header {
   padding: 0 20px;
